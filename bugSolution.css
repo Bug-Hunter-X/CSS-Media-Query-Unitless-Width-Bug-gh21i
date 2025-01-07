@@ -1,0 +1,11 @@
+The solution is simple: always specify the unit for the `width` property, even within media queries.
+
+```css
+@media (max-width: 768px) {
+  .element {
+    width: 100%; /* Correct: uses percentage unit */
+  }
+}
+```
+
+By explicitly using `100%`, we ensure that the element's width is correctly set to 100% of its containing element's width within the specified media query breakpoint.
