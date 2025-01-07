@@ -1,0 +1,11 @@
+The following CSS code snippet demonstrates an uncommon issue: using a unitless value for the `width` property within a media query.
+
+```css
+@media (max-width: 768px) {
+  .element {
+    width: 100;
+  }
+}
+```
+
+This might seem correct, aiming to set the width to 100% at smaller screen sizes. However, omitting the percentage sign ('%') or other units causes the `width` to be interpreted as 100 pixels. 
